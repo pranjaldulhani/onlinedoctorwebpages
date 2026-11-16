@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book Appointment</title>
+<style>
+body {
+ font-family: Arial;
+ background: #eaf6f6;
+ text-align: center;
+}
+h1 {background: #087f8c; color: white; padding: 20px;}
+form {
+ background: white;
+ padding: 25px;
+ margin: 30px auto;
+ width: 280px;
+ border-radius: 10px;
+}
+input, select {
+ padding: 10px;
+ margin: 10px;
+ width: 85%;
+}
+button {
+ background: #087f8c;
+ color: white;
+ padding: 10px;
+ border: none;
+}
+</style>
+</head>
+<body>
+
+<h1>Book Doctor Appointment</h1>
+
+<form onsubmit="book(event)">
+<input type="text" placeholder="Patient Name" required>
+<input type="email" placeholder="Email" required>
+
+<select required>
+<option value="">Select Doctor</option>
+<option>Dr. Rahul Sharma</option>
+<option>Dr. Priya Patil</option>
+<option>Dr. Amit Verma</option>
+</select>
+
+<input type="date" required>
+<input type="time" required>
+
+<button type="submit">Book Appointment</button>
+</form>
+
+<script>
+function book(event) {
+ event.preventDefault();
+ alert("Appointment Request Submitted!");
+}
+</script>
+
+</body>
+</html>
